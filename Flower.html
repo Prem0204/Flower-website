@@ -1,0 +1,395 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Flower</title>
+    <style>
+
+      .flower1{
+        margin-left: 20px;
+      }
+      .petal{
+        margin-left: 25px;
+        height: 40px;
+        background-color: white;
+        width: 30px;
+        border-radius: 0px 45px;
+        border-color: black;
+        border: solid;
+        display: flex;
+        transform: rotate(10deg);
+      }
+
+      .petal2{
+        margin-left: 53px;
+        height: 40px;
+        background-color: #eb7beb;
+        width: 30px;
+        border-radius: 0px 45px;
+        border-color: black;
+        border: solid;
+        display: flex;
+        transform: rotate(10deg);
+
+      }
+      .petal3{
+        height: 40px;
+        background-color: #eb7beb;
+        width: 30px;
+        border-radius: 45px 0px;
+        border-color: black;
+        border: solid;
+        margin-top: -92px;
+        margin-left:50px ;
+        transform: rotate(-10deg);
+
+      }
+
+      .petal4{
+        height: 40px;
+        background-color: white;
+        width: 30px;
+        border-radius: 45px 0px;
+        border-color: black;
+        border: solid;
+        margin-left: 20px;
+
+      }
+      .petal5{
+        height: 40px;
+        background-color: white;
+        width: 30px;
+        border-radius: 45px 0px;
+        border-color: black;
+        border: solid;
+        transform: rotate(50deg);
+        margin-top: -75px;
+        margin-left: 65px;
+        z-index: -100;
+        overflow: hidden;
+        position: absolute;
+        
+
+      }
+
+      .petal6{
+        height: 40px;
+        background-color: #eb7beb;
+        width: 30px;
+        border-radius: 45px 0px;
+        border-color: black;
+        border: solid;
+        transform: rotate(50deg);
+        margin-top: -70px;
+        z-index: -100;
+        overflow: hidden;
+        position: absolute;
+        margin-left: 5px;
+
+      }
+
+      
+
+      .mid-section{
+        position: relative;
+        height: 20px;
+        width: 20px;
+        background-color: #eb7beb;
+        border-radius: 10px;
+        margin-top: -55px;
+       
+        margin-left: 49px;
+        z-index: 100;
+        overflow: hidden;
+      }
+      .stem{
+        height: 120px;
+        width: 10px;
+        background-color: white;
+        margin-left: 49px;
+        margin-top: 90px;
+        border-radius: 50%;
+        background-color: darkgreen;
+      }
+
+      .flower-upper-part{
+        margin-top: -140px;
+      }
+      .leaf{
+        height: 30px;
+        width: 20px;
+        background-color: #e791e7;
+        border-radius: 45px 0px;
+        border-color: black;
+        margin-top: -70px;
+        margin-left: 55px;
+        
+
+      }
+
+      .flower2{
+        margin-left: 80px;
+        position: relative;
+        z-index: 300;
+        margin-top: -50px;
+      }
+
+      .flower2 .petal{
+        background-color: white;
+      }
+      .flower2 .petal2{
+        background-color: #eb7beb;
+      }
+      .flower2 .petal3{
+        background-color: #eb7beb;
+      }
+      .flower2 .petal4{
+        background-color: white;
+      }
+      .flower2 .petal5{
+        background-color: white;
+      }
+      .flower2 .petal6{
+        background-color: #eb7beb;
+      }
+      .flower2 .petal7{
+        background-color: white;
+      }
+      .flower2 .mid-section{
+        background-color: #eb7beb;
+      }
+
+      
+
+      .flower3{
+        margin-left: 40px;
+        position: relative;
+        z-index: 300;
+        margin-top: -20px;
+      }
+
+      .flower3 .petal{
+        background-color: white;
+      }
+      .flower3 .petal2{
+        background-color: #eb7beb;
+      }
+      .flower3 .petal3{
+        background-color: #eb7beb;
+      }
+      .flower3 .petal4{
+        background-color: white;
+      }
+      .flower3 .petal5{
+        background-color: white;
+      }
+      .flower3 .petal6{
+        background-color: #eb7beb;
+      }
+      .flower3 .petal7{
+        background-color: white;
+      }
+      .flower3 .mid-section{
+        background-color: #eb7beb;
+      }
+
+      
+
+      
+
+      .flower4{
+        margin-left: 140px;
+        position: relative;
+        z-index: 300;
+        margin-top: -190px;
+      }
+
+      .flower4 .petal{
+        background-color: white;
+      }
+      .flower4 .petal2{
+        background-color: #eb7beb;
+      }
+      .flower4 .petal3{
+        background-color: #eb7beb;
+      }
+      .flower4 .petal4{
+        background-color: white;
+      }
+      .flower4 .petal5{
+        background-color: white;
+      }
+      .flower4 .petal6{
+        background-color: #eb7beb;
+      }
+      .flower4 .petal7{
+        background-color: white;
+      }
+      .flower4 .mid-section{
+        background-color: #eb7beb;
+      }
+
+      
+
+      .flower5{
+        margin-left: 130px;
+        position: relative;
+        z-index: 300;
+        
+      }
+
+      .flower5 .petal{
+        background-color: white;
+      }
+      .flower5 .petal2{
+        background-color: #eb7beb;
+      }
+      .flower5 .petal3{
+        background-color: #eb7beb;
+      }
+      .flower5 .petal4{
+        background-color: white;
+      }
+      .flower5 .petal5{
+        background-color: white;
+      }
+      .flower5 .petal6{
+        background-color: #eb7beb;
+      }
+      .flower5 .petal7{
+        background-color: white;
+      }
+      .flower5 .mid-section{
+        background-color: #eb7beb;
+      }
+
+      
+
+      .container{
+        
+        
+      }
+
+      .big-container{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+
+      .text{
+        font-size: 30px;
+        font-family: lucida handwriting;
+        margin-left: 50px;
+      }
+
+    </style>
+  </head>
+  <body style="background-color: aliceblue;">
+    <div class="text">
+      POV: You want to give her flowers, but you're a bit shy, creative and a Computer Science student
+      
+    </div>
+
+    <div class="big-container">
+      <div class="container">
+        <div class="flower1">
+          <div class="stem"></div>
+          <div class="leaf"></div>
+      
+            
+          <div class="flower-upper-part">
+            <div class="petal"></div>
+            <div class="petal2"></div>
+            <div class="petal3"></div>
+            <div class="petal4"></div>
+            <div class="petal5"></div>
+            <div class="petal6"></div>
+            <div class="petal7"></div>
+            <div class="mid-section"></div>
+      
+          </div>
+        </div>
+    
+        <div class="flower2">
+          <div class="stem"></div>
+          <div class="leaf"></div>
+      
+            
+          <div class="flower-upper-part">
+            <div class="petal"></div>
+            <div class="petal2"></div>
+            <div class="petal3"></div>
+            <div class="petal4"></div>
+            <div class="petal5"></div>
+            <div class="petal6"></div>
+            <div class="petal7"></div>
+            <div class="mid-section"></div>
+      
+          </div>
+        </div>
+    
+        <div class="flower3">
+          <div class="stem"></div>
+          <div class="leaf"></div>
+      
+            
+          <div class="flower-upper-part">
+            <div class="petal"></div>
+            <div class="petal2"></div>
+            <div class="petal3"></div>
+            <div class="petal4"></div>
+            <div class="petal5"></div>
+            <div class="petal6"></div>
+            <div class="petal7"></div>
+            <div class="mid-section"></div>
+      
+          </div>
+        </div>
+    
+        <div class="flower4">
+          <div class="stem"></div>
+          <div class="leaf"></div>
+      
+            
+          <div class="flower-upper-part">
+            <div class="petal"></div>
+            <div class="petal2"></div>
+            <div class="petal3"></div>
+            <div class="petal4"></div>
+            <div class="petal5"></div>
+            <div class="petal6"></div>
+            <div class="petal7"></div>
+            <div class="mid-section"></div>
+      
+          </div>
+        </div>
+  
+        <div class="flower5">
+          <div class="stem"></div>
+          <div class="leaf"></div>
+      
+            
+          <div class="flower-upper-part">
+            <div class="petal"></div>
+            <div class="petal2"></div>
+            <div class="petal3"></div>
+            <div class="petal4"></div>
+            <div class="petal5"></div>
+            <div class="petal6"></div>
+            <div class="petal7"></div>
+            <div class="mid-section"></div>
+      
+          </div>
+        </div>
+      </div>
+    </div>
+
+   
+    
+   
+   
+    
+    
+
+
+  </body>
+</html>
